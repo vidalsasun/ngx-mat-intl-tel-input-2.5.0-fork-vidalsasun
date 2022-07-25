@@ -1,6 +1,6 @@
 {
   "name": "@vidalsasun/ngx-mat-intl-tel-input",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,9 +13,11 @@
     "package": "npm run build_lib && npm run copy-files && npm run npm_pack",
     "copy-license": "cp ./LICENSE ./dist/ngx-mat-intl-tel-input",
     "copy-readme": "cp ./README.md ./dist/ngx-mat-intl-tel-input",
-    "copy-files": "npm run copy-license && npm run copy-readme"
+    "copy-files": "npm run copy-license && npm run copy-readme",
+    "pack": "mkdir -p dist && cp package.json dist/package.json && npm pack ./dist",
+    "pub": "npm publish $(node -p \"p=require('./package.json');p.name+'-'+p.version+'.tgz'\")"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.12",
     "@angular/cdk": "~8.2.3",

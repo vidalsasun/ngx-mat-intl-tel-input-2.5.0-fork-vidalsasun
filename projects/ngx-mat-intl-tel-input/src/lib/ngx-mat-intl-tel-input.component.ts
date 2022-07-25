@@ -93,7 +93,6 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
     } else {
       prefix = '';
     }
-    debugger;
     return prefix + numericVal;
   }
 
@@ -158,9 +157,9 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
     try {
       this.numberInstance = parsePhoneNumberFromString(this._getFullNumber());
       this.value = this.numberInstance.number;
-      debugger;
       if (this.numberInstance && this.numberInstance.isValid()) {
-        this.phoneNumber = this.numberInstance.formatNational();
+        //this.phoneNumber = this.numberInstance.formatNational();
+        this.phoneNumber = '(' + this.numberInstance.ext + ') ' + this.phoneNumber;
       }
     } catch (e) {
       // if no possible numbers are there,
@@ -225,7 +224,8 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
       this.numberInstance = parsePhoneNumberFromString(value);
       if (this.numberInstance) {
         const countryCode = this.numberInstance.country;
-        this.phoneNumber = this.numberInstance.formatNational();
+        //this.phoneNumber = this.numberInstance.formatNational();
+        this.phoneNumber = '(' + this.numberInstance.ext + ') ' + this.phoneNumber;
         if (!countryCode) {
           return;
         }

@@ -1,5 +1,6 @@
-# International Telephone Input for Angular Material (NgxMatIntlTelInput)
+# FORKED International Telephone Input for Angular Material (NgxMatIntlTelInput)
 
+I have modified angular V8 version to not to clean the field on validation
 An Angular Material package for entering and validating international telephone numbers. It adds a flag dropdown to any input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.
 
 **Supports:**

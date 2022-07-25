@@ -1,6 +1,6 @@
 {
-  "name": "ngx-mat-intl-tel-input",
-  "version": "2.0.5",
+  "name": "@vidalsasun/ngx-mat-intl-tel-input",
+  "version": "2.0.5.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -15,7 +15,7 @@
     "copy-readme": "cp ./README.md ./dist/ngx-mat-intl-tel-input",
     "copy-files": "npm run copy-license && npm run copy-readme"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.12",
     "@angular/cdk": "~8.2.3",

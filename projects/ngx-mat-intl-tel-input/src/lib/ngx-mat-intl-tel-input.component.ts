@@ -93,6 +93,7 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
     } else {
       prefix = '';
     }
+    debugger;
     return prefix + numericVal;
   }
 
@@ -157,6 +158,7 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
     try {
       this.numberInstance = parsePhoneNumberFromString(this._getFullNumber());
       this.value = this.numberInstance.number;
+      debugger;
       if (this.numberInstance && this.numberInstance.isValid()) {
         this.phoneNumber = this.numberInstance.formatNational();
       }

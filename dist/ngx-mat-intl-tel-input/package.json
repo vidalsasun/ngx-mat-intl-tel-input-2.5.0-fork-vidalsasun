@@ -1,6 +1,6 @@
 {
     "name": "@vidalsasun/ngx-mat-intl-tel-input",
-    "version": "2.0.5",
+    "version": "1.1.3",
     "peerDependencies": {
         "@angular/common": "~8.2.12",
         "@angular/core": "~8.2.12",
@@ -14,8 +14,8 @@
         "url": "git+https://github.com/tanansatpal/ngx-mat-intl-tel-input"
     },
     "author": {
-        "name": "Satpal Tanan",
-        "email": "tanansatpal@gmail.com"
+        "name": "Carlos Moreira",
+        "email": "cmoreira@ceieu.com"
     },
     "keywords": [
         "angular",
@@ -41,5 +41,18 @@
         "input",
         "flag"
     ],
-    "license": "MIT"
+    "license": "MIT",
+    "main": "bundles/vidalsasun-ngx-mat-intl-tel-input.umd.js",
+    "module": "fesm5/vidalsasun-ngx-mat-intl-tel-input.js",
+    "es2015": "fesm2015/vidalsasun-ngx-mat-intl-tel-input.js",
+    "esm5": "esm5/vidalsasun-ngx-mat-intl-tel-input.js",
+    "esm2015": "esm2015/vidalsasun-ngx-mat-intl-tel-input.js",
+    "fesm5": "fesm5/vidalsasun-ngx-mat-intl-tel-input.js",
+    "fesm2015": "fesm2015/vidalsasun-ngx-mat-intl-tel-input.js",
+    "typings": "vidalsasun-ngx-mat-intl-tel-input.d.ts",
+    "metadata": "vidalsasun-ngx-mat-intl-tel-input.metadata.json",
+    "sideEffects": false,
+    "dependencies": {
+        "tslib": "^1.9.0"
+    }
 }

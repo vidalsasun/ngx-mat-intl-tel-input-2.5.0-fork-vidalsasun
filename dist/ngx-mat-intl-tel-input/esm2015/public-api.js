@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ngx-mat-intl-tel-input
+ */
+export * from './lib/ngx-mat-intl-tel-input.service';
+export * from './lib/ngx-mat-intl-tel-input.component';
+export * from './lib/ngx-mat-intl-tel-input.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0B2aWRhbHNhc3VuL25neC1tYXQtaW50bC10ZWwtaW5wdXQvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxzQ0FBc0MsQ0FBQztBQUNyRCxjQUFjLHdDQUF3QyxDQUFDO0FBQ3ZELGNBQWMscUNBQXFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5neC1tYXQtaW50bC10ZWwtaW5wdXRcbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtbWF0LWludGwtdGVsLWlucHV0LnNlcnZpY2UnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LW1hdC1pbnRsLXRlbC1pbnB1dC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbmd4LW1hdC1pbnRsLXRlbC1pbnB1dC5tb2R1bGUnO1xuIl19

@@ -157,10 +157,9 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
     try {
       this.numberInstance = parsePhoneNumberFromString(this._getFullNumber());
       this.value = this.numberInstance.number;
-      if (this.numberInstance && this.numberInstance.isValid()) {
-        //this.phoneNumber = this.numberInstance.formatNational();
-        this.phoneNumber = '(' + this.numberInstance.ext + ') ' + this.phoneNumber;
-      }
+      /*if (this.numberInstance && this.numberInstance.isValid()) {
+        this.phoneNumber = this.numberInstance.formatNational();
+      }*/
     } catch (e) {
       // if no possible numbers are there,
       // then the full number is passed so that validator could be triggered and proper error could be shown
@@ -224,8 +223,7 @@ export class NgxMatIntlTelInputComponent implements OnInit, OnDestroy, DoCheck, 
       this.numberInstance = parsePhoneNumberFromString(value);
       if (this.numberInstance) {
         const countryCode = this.numberInstance.country;
-        //this.phoneNumber = this.numberInstance.formatNational();
-        this.phoneNumber = '(' + this.numberInstance.ext + ') ' + this.phoneNumber;
+        this.phoneNumber = this.numberInstance.formatNational();
         if (!countryCode) {
           return;
         }
